@@ -1,9 +1,7 @@
-const numbers = [1,2,3,4,];
+const myarray = ['java','javaScript','python','c++','go']
 
-// const newNumbers = numbers.reduce((pre,curr)=>pre+curr,10);
-const newNumbers = numbers.reduce(function(preValue,currValue){
-    console.log(`this is preValue ${preValue} and this is currValue ${currValue}`)
-    return preValue+currValue
-},0)
-
-console.log(newNumbers)
+myarray.map((item,index,array)=>{
+    // return console.table([item,index,array])
+    // return console.log(array)
+    return console.log(`this is my item ${item} this is my index ${index}`)
+})
