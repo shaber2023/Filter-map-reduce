@@ -1,12 +1,11 @@
 const myarray = ['java','javaScript','python','c++','go']
 const newArray = [1,2,3,4,5,6,7,]
 
-console.log(newArray.includes(10))
+//same output sprade oparetor
+const data = [...myarray,...newArray];
+console.log(data)
 
-console.log(newArray.indexOf(4))
+//same output concat oparetor
+const mydata = myarray.concat(newArray);
+console.log(mydata)
 
-console.log(typeof newArray.join())
-
-console.log(myarray.length)
-
-console.log(newArray.push(9))
